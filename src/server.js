@@ -1,13 +1,8 @@
-const express = require('express');
-const app = express();
-const PORT = 3000;
+const app = require('./app');  // Import ứng dụng Express từ app.js
 
-// Create routers
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+const PORT = process.env.PORT || 3000;  // Cấu hình port từ biến môi trường hoặc mặc định 3000
 
-// Runserver
+// Khởi động server
 app.listen(PORT, () => {
-  console.log(`Hii Hope developer!, i'm running on http://localhost:${PORT}`);
+  console.log(`Hi dev!, i'm running on http://localhost:${PORT}`);
 });

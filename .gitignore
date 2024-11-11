@@ -1,4 +1,29 @@
+# Node modules
 node_modules/
+
+# Environment variables
 .env
-package-lock.json
-package.json
+
+# Logs
+*.log
+logs/
+
+# Coverage reports
+coverage/
+
+# Compiled files
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+
+# Uploads (optional)
+uploads/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+
